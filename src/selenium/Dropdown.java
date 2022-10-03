@@ -1,27 +1,30 @@
-//package selenium;
-//
-//import org.openqa.selenium.*;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//
-//import java.util.List;
-//
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.ui.Select;
-//
-//public class Dropdown {
-//    public static WebDriver driver;
-//
-//    public static void main(String[] args) throws InterruptedException {
-//        // Open the Chrome Browser
-//        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//
-//        //Max the Chrome Browser
-//        driver.manage().window().maximize();
-//
+package selenium;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Dropdown {
+    public static WebDriver driver;
+
+    public static void main(String[] args) throws InterruptedException {
+        // Open the Chrome Browser
+        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
+        driver = new ChromeDriver();
+
+        //Max the Chrome Browser
+        driver.manage().window().maximize();
+
 ////        //Navigate to the URL
-//        driver.get("https://books-pwakit.appspot.com/");
-//
+//          driver.get("https://spicejet.com/");
+//          //Checkbox
+//        System.out.println(driver.findElement(By.cssSelector("input[id*='SeciorCitizenDiscout']")).isSelected());
+//        driver.findElement(By.cssSelector("input[id*='SeciorCitizenDiscout']")).click();
+//        System.out.println(driver.findElement(By.cssSelector("input[id*='SeciorCitizenDiscout']")).isSelected());
 //        //Static Dropdown
 ////        Select s = new Select(driver.findElement(By.id()));
 ////         s.selectByIndex();
@@ -68,5 +71,5 @@
 //
 //
 //
-//    }
-//}
+ }
+}
