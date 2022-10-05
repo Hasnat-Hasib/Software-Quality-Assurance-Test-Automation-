@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://D:/seleniumJar/async-http-client-2.12.3.jar!/" />
@@ -92,7 +92,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://D:/seleniumJar/jars/async-http-client-2.12.3.jar!/" />
@@ -175,6 +175,15 @@
           <root url="jar://D:/seleniumJar/jars/selenium-safari-driver-4.4.0-sources.jar!/" />
           <root url="jar://D:/seleniumJar/jars/selenium-support-4.4.0-sources.jar!/" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/testNg/testng-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>

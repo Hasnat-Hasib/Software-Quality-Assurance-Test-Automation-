@@ -20,6 +20,8 @@ public class Popup {
         driver.get("http://www.tizag.com/javascriptT/javascriptalert.php");
         driver.findElement(By.xpath("/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/div[4]/form[1]/input[1]")).click();
         driver.switchTo().alert().accept();
+
+
         //driver.switchTo().alert().sendKeys("feedback);
         //driver.switchTo().alert().dismiss();
         //driver.close();
