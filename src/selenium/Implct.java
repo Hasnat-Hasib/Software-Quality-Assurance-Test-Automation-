@@ -15,7 +15,7 @@ public class Implct {
     Duration timeout;
     public static void main(String[] args) throws InterruptedException {
 // TODO Auto-generated method stub
-        System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://alaskatrips.poweredbygps.com/g/pt/hotels?MDPCID=ALASKA-US.TPS.BRAND.hotels.HOTEL");
