@@ -17,8 +17,17 @@ public class Movingmouse {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://amazon.com");
         Actions ac = new Actions(driver);
+        //Writing in Capital Letters
+        ac.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("T-Shirts").doubleClick().build().perform();
+        //Moving to Specific element
         ac.moveToElement(driver.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
+        //Right-click on a Element
+        ac.moveToElement(driver.findElement(By.id("nav-link-accountList-nav-line-1"))).contextClick().build().perform();
+
+        driver.close();
+
     }
 }
