@@ -13,7 +13,7 @@ public class EndToEnd {
 
 // TODO Auto-generated method stub
 
-        System.setProperty("webdriver.chrome.driver", "C://work//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
 
         WebDriver driver =new ChromeDriver();
 
