@@ -12,7 +12,7 @@ public class Table {
 
     public static void main(String[] args) {
         int sum=0;
-        System.setProperty("webdriver.chrome.driver", "C://work//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.cricbuzz.com/live-cricket-scorecard/18970/pak-vs-sl-2nd-t20i-pakistan-v-sri-lanka-in-uae-2017");
 

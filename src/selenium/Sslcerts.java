@@ -11,7 +11,7 @@ public class Sslcerts {
     public static WebDriver driver;
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C://work//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\seleniumJar\\chromedriver\\chromedriver.exe");
 
 
 //SSl certificates
