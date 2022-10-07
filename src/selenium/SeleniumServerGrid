@@ -1,0 +1,11 @@
+Steps to Launch Selenium server Jar
+1. Download selenium standalone server jar
+2. Started the hub
+	java -jar selenium-server-standalone-3.8.1.jar -role hub
+
+3. Login to another machine and register it as node for the hub
+	i. For registering machine as node pc needs to download Selenium server jar (For every pc what will act as a node)
+	ii. java -jar selenium-server-standalone-3.8.1.jar -role webdriver -hub http://ipAddressOfTheMachine/grid/register -port 5566
+	(Check if java is configured in system variable)
+	iii. java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.8.1.jar -role webdriver -hub http://ipAddressOfTheMachine/grid/register -port 5566
+4.  
