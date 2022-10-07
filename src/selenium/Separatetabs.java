@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.Iterator;
+import java.util.Set;
+
 
 public class Separatetabs {
     public static WebDriver driver;
@@ -26,6 +29,14 @@ public class Separatetabs {
             String newtab = Keys.chord(Keys.CONTROL, Keys.ENTER);
             column.findElements(By.tagName("a")).get(i).sendKeys(newtab);
             Thread.sleep(5000L);
+        }
+
+        //Getting title of the child window
+        Set<String> win = driver.getWindowHandles();
+        Iterator<String> iter = win.iterator();
+        while (iter.hasNext()){
+            driver.switchTo().window(iter.next());
+            System.out.println(driver.getTitle());
         }
 
 
